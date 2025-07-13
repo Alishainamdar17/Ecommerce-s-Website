@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Spartan', sans-serif;
+}
+
+body {
+  width: 100%;
+}
+
+/* Headings and Paragraphs */
+h1 {
+  font-size: 50px;
+  line-height: 64px;
+  color: #222;
+}
+
+h2 {
+  font-size: 46px;
+  line-height: 54px;
+  color: #222;
+}
+
+h4 {
+  font-size: 20px;
+  color: #222;
+}
+
+h6 {
+  font-weight: 700;
+  font-size: 12px;
+}
+
+p {
+  font-size: 16px;
+  color: #465b52;
+  margin: 15px 0 20px 0;
+}
+
+/* Sections */
+.section-p1 {
+  padding: 40px 80px;
+}
+
+.section0-m1 {
+  margin: 40px 0;
+}
+
+/* Logo */
+.logo {
+  flex: 1;
+}
+
+/* Header */
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 80px;
+  background: #c0c3c0;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+/* Navbar */
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+#navbar li {
+  list-style: none;
+  padding: 0 20px;
+}
+
+#navbar li a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1a1a1a;
+  position: relative;
+  transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+  color: rgb(15, 130, 9);
+}
+
+#navbar li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background: #088178;
+  transition: width 0.3s ease;
+}
+
+#navbar li a:hover::after,
+#navbar li a.active::after {
+  width: 100%;
+}
+
+/* Hero Section */
+#hero {
+  background-image: url(img/hero4.png);
+  height: 90vh;
+  width: 100%;
+  background-position: top 25% right 0;
+  padding: 0 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+#hero h4 {
+  padding-bottom: 15px;
+}
+
+#hero h1 {
+  color: rgb(3, 90, 3);
+}
+
+#hero button {
+  background-image: url(img/button.png);
+  background-color: transparent;
+  color: #03640b;
+  border: 0;
+  padding: 14px 80px 14px 65px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+/* Feature Section */
+#feature {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#feature .fe-box {
+  width: 180px;
+  text-align: center;
+  padding: 25px 15px;
+  box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+  border: 1px solid #cce7d0;
+  border-radius: 4px;
+  margin: 15px 0;
+  transition: 0.3s ease;
+}
+
+#feature .fe-box:hover {
+  box-shadow: 20px 20px 54px rgba(70, 62, 221, 0.1);
+}
+
+#feature .fe-box img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#feature .fe-box h6 {
+  display: inline-block;
+  padding: 9px 8px 6px 8px;
+  line-height: 1;
+  border-radius: 4px;
+  color: #088178;
+  background-color: hsl(347, 65%, 86%);
+}
+
+#feature .fe-box:nth-of-type(2) h6 { background-color: #9cf078; }
+#feature .fe-box:nth-of-type(3) h6 { background-color: #e6e20f; }
+#feature .fe-box:nth-of-type(4) h6 { background-color: #f99c63; }
+#feature .fe-box:nth-of-type(5) h6 { background-color: #f98fa8; }
+#feature .fe-box:nth-of-type(6) h6 { background-color: #b4dfea; }
+
+/* Product Section */
+#product1 {
+  text-align: center;
+}
+
+#product1 .pro-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+#product1 .pro {
+  width: 23%;
+  min-width: 250px;
+  padding: 10px 12px;
+  border: 1px solid #cce7d0;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+  margin: 15px 0;
+  transition: 0.3s ease;
+  position: relative;
+  background-color: #fff;
+}
+
+#product1 .pro:hover {
+  box-shadow: 20px 20px 30px rgba(13, 13, 13, 0.06);
+}
+
+#product1 .pro img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+#product1 .pro .des {
+  text-align: left;
+  padding: 10px 0;
+}
+
+#product1 .pro .des span {
+  color: #777;
+  font-size: 12px;
+  display: block;
+  margin-bottom: 5px;
+}
+
+#product1 .pro .des h5 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  margin: 5px 0;
+}
+
+#product1 .pro .des .stars {
+  color: #f8ce0b;
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+#product1 .pro .des h4 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #088178;
+  margin-top: 8px;
+}
+
+#product1 .pro a {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  color: #088178;
+  font-size: 20px;
+  background-color: #b2b6b3;
+  padding: 10px;
+  border-radius: 50%;
+  transition: background 0.3s ease;
+}
+
